@@ -1,7 +1,8 @@
 # pip install pyTelegramBotAPI
 import telebot
 
-bot = telebot.TeleBot("YOUR_TOKEN_HERE")
+import os
+bot = telebot.TeleBot(os.getenv("BOT_TOKEN"))
 
 MY_NAME = "Дарина"          # ← имя, на которое реагируем
 REPEAT_COUNT = True       # True = повторяет столько раз, сколько упомянули
